@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>To-Do App</h1> <!-- Added Heading -->
+        </header>
+    
+        <aside class="sidebar">
+            <ul class="menu">
+                <li class="nav-link" data-index="0">My Day</li>
+                <li class="nav-link" data-index="1">Important</li>
+                <li class="nav-link" data-index="2">Planned</li>
+                <li class="nav-link active" data-index="3">Tasks</li>
+            </ul>
+        </aside>
+    
+        <main class="task-view">
+            <input type="text" id="task-input" placeholder="Enter a new task here">
+            <input type="date" id="due-date-input" placeholder="Due Date" required>
+            <button id="add-task-btn">Add a task</button>
+            <div class="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </div>
+            <div class="important-task-list hidden">
+                <!-- Important tasks will be dynamically added here -->
+            </div>
+            <div class="planned-task-list hidden">
+                <!-- Planned tasks will be dynamically added here -->
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
